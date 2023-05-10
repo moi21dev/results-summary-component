@@ -5,43 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {margin-top: 40px;}
   </style>
 </head>
 <body>
+  <main>
 
-  Your Result
-  76
-  of 100
+    <div class="card">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="div" id="result">
+        <p id="your-result">Your Result</p>
+        <div id="circle">
+          <div class="section">
+            <p>76</p>
+            <p>of 100</p>
+          </div>
+        </div>
+        <p>Great</p>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
 
-  Reaction
-  80 / 100
+      <div class="div" id="summary">
+        <p id="summary-title">Summary</p>
+        <div id="tests-section">
+          <div class="test-div"><img src="./assets/images/icon-reaction.svg" alt="reaction icon"><p>Reaction</p> <p class="score">80 / 100</p></div>
+          <div class="test-div"><img src="./assets/images/icon-memory.svg" alt="memory icon"><p>Memory</p> <p class="score">92 / 100</p></div>
+          <div class="test-div"><img src="./assets/images/icon-verbal.svg" alt="verbal icon"><p>Verbal</p> <p class="score">61 / 100</p></div>
+          <div class="test-div"><img src="./assets/images/icon-visual.svg" alt="visual icon"><p>Visual</p> <p class="score">72 / 100</p></div>
+        </div>
+        <button>
+          Continue
+        </button>
+      </div>
+    </div>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/moi21dev">moi21dev</a>.
+    </div>
+
+  </main>
 </body>
 </html>
