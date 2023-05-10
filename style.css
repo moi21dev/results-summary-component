@@ -1,0 +1,181 @@
+
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+}
+
+/* card */
+.card {
+    width: 75vh;
+    height: 400px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px 1px hsla(0, 100%, 0%, 10%);
+}
+
+/* result side */
+  #result {
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 50%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/* your result title */
+#your-result{
+    color: hsl(241, 100%, 89%);
+    margin-top: 38px;
+    margin-bottom: 10%;
+}
+
+/* score circle */
+  #circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+/* score container */
+.section{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+/* score */
+  #circle p {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* score x out of 100 */
+  #circle p:nth-child(2) {
+    color: hsla(241, 100%, 89%, 50%);
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+/* message title after score */
+  #result p:nth-child(3){
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 10%;
+}
+
+/* message content after score */
+  #result p:nth-child(4){
+  font-size: 13px;
+  color: hsl(241, 100%, 89%);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* summary side */
+
+/* summary container */
+  #summary {
+    text-align: left;
+    margin: auto;
+
+}
+
+/* summary title */
+#summary-title {
+    margin-top: 1%;
+    padding-bottom: 12px;
+}
+
+
+/* icons */
+#summary img {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* container for each test */
+.test-div {
+    width: 220px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:start;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+#tests-section .test-div:nth-child(1){
+    background-color: hsla(0, 100%, 67%, 8%);
+    color: hsl(0, 100%, 67%);
+}
+
+#tests-section .test-div:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 8%);
+    color: hsl(39, 100%, 56%);
+}
+
+#tests-section .test-div:nth-child(3){
+    background-color: hsla(166, 100%, 37%, 8%);
+    color: hsl(166, 100%, 37%)
+}
+
+#tests-section .test-div:nth-child(4){
+    background-color: hsla(234, 85%, 45%, 8%);
+    color: hsl(234, 85%, 45%);
+}
+
+.score {
+       color: hsl(224, 30%, 27%);
+       margin-left: 60px;
+}
+
+
+
+/* continue button */
+button {
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    border: 0;
+    width: 220px;
+    height: 40px;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+
+/* maximum width for mobile */
+@media (max-width: 375px) {
+    .card {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+  
