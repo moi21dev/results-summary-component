@@ -3,23 +3,22 @@
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 500;
+    background-color: hsl(221, 100%, 96%);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: hsl(221, 100%, 96%);
 }
 
 /* card */
 .card {
-    width: 75vh;
-    height: 400px;
-    background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     display: flex;
     flex-flow: row wrap;
     box-shadow: 5px 20px 20px 1px hsla(229, 55%, 70%, 0.2);
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
 }
 
 /* RESULT SIDE */
@@ -27,9 +26,9 @@ body {
 /* result container */
   #result {
     background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-    width: 50%;
     border-radius: 25px;
     text-align: center;
+    flex: 50%;
 
 }
 
@@ -90,14 +89,16 @@ body {
   color: hsl(241, 100%, 89%);
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 10%;
 }
 
 /* SUMMARY SIDE*/
 
 /* summary container */
   #summary {
-    text-align: left;
     margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    flex: 50%;
 }
 
 /* summary title */
@@ -113,17 +114,24 @@ body {
     margin-right: 10px;
 }
 
+#tests-section {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
 /* container for each test */
 .test-div {
-    width: 220px;
     height: 40px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content:start;
+    justify-content:center;
     margin-bottom: 15px;
     font-size: 13px;
+    ;
 }
 
 /* reaction */
@@ -184,15 +192,46 @@ button:hover{
     cursor: pointer;
 }
 
+/* card maximum width for laptop */
+@media screen and (min-width: 401px) {
+    .card{
+        flex-flow: row nowrap;
+        max-width: 550px;
+        max-height: 600px;
+    }
+
+    .test-div{
+        max-width: 250px;
+    }
+
+}
 
 /* maximum width for mobile */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     #result, #summary {
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: left;
+        flex: 100%;
+        flex-flow:column;
+        width: min-content;
+      
+    }
+
+    #result p:nth-child(4){
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .test-div{
+        max-width: 320px;
+    }
+    body{
+        margin: auto;
+        flex-flow: column wrap;
         width: fit-content;
+        background-color: white;
+    }
+
+    .card{
+        box-shadow: none;
+        text-align: center;
     }
 }
-  
