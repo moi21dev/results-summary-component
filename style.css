@@ -19,7 +19,7 @@ body {
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    box-shadow: 5px 5px 20px 1px hsla(0, 100%, 0%, 10%);
+    box-shadow: 5px 20px 20px 1px hsla(229, 55%, 70%, 0.2);
 }
 
 /* RESULT SIDE */
