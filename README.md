@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/flexbox-with-results-summary-component-project-4s-MUH0JJX)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/flexbox-with-results-summary-component-project-4s-MUH0JJX)
 - Live Site URL: [Github Pages](https://moi21dev.github.io/results-summary-component/)
 
 ## My process
