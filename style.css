@@ -87,8 +87,8 @@ body {
   #result p:nth-child(4){
   font-size: 13px;
   color: hsl(241, 100%, 89%);
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* SUMMARY SIDE*/
@@ -157,13 +157,16 @@ body {
 
 /* / 100 */
 .hundred {
-    color: hsla(224, 30%, 27%, 70%);
+    color: hsla(224, 30%, 27%, 50%);
 }
 
 .score, .hundred{
     font-weight: 700;
 }
 
+.numbers {
+    margin-right: 0;
+}
 
 /* continue button */
 button {
