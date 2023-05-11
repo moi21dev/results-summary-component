@@ -61,4 +61,4 @@ I defenitely want to learn Flexbox and CSS Grid better! These tools are useful f
 - [Media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries) - This guide is useful for a quick recap on how media queries works.
 
 ## Author
-- Frontend Mentor - [@ymoi21dev](https://www.frontendmentor.io/profile/moi21dev)
+- Frontend Mentor - [@moi21dev](https://www.frontendmentor.io/profile/moi21dev)
