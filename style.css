@@ -102,10 +102,10 @@ body {
 }
 
 /* summary title */
-#summary-title {
-    margin-top: 1%;
-    padding-bottom: 12px;
-}
+ #summary-title {
+    display: inline-block;
+    position: relative;
+ }
 
 /* icons */
 #summary img {
@@ -123,16 +123,20 @@ body {
 }
 /* container for each test */
 .test-div {
-    height: 40px;
+    height: 45px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content:center;
-    margin-bottom: 15px;
+    /* justify-content:left; */
+    margin-bottom: 13px;
     font-size: 13px;
-    ;
+    width: 220px;
 }
+
+/* .test-div img, p:first-of-type{
+    justify-content: left;
+} */
 
 /* reaction */
 #tests-section .test-div:nth-child(1){
@@ -149,13 +153,20 @@ body {
 /* verbal */
 #tests-section .test-div:nth-child(3){
     background-color: hsla(166, 100%, 37%, 8%);
-    color: hsl(166, 100%, 37%)
+    color: hsl(166, 100%, 37%);
 }
 
 /* visual */
 #tests-section .test-div:nth-child(4){
     background-color: hsla(234, 85%, 45%, 8%);
     color: hsl(234, 85%, 45%);
+}
+
+/* correct position of verbal and visual scores */
+.total {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
 }
 
 /* score number */
@@ -192,7 +203,7 @@ button:hover{
     cursor: pointer;
 }
 
-/* card maximum width for laptop */
+/* responsive laptop */
 @media screen and (min-width: 401px) {
     .card{
         flex-flow: row nowrap;
@@ -200,19 +211,46 @@ button:hover{
         max-height: 600px;
     }
 
+    #summary-title{
+        padding-left: 30px;
+    }
+
     .test-div{
         max-width: 250px;
     }
 
+    button{
+        margin-left: 28px;
+    }
+
 }
 
-/* maximum width for mobile */
+/* responsive mobile */
 @media screen and (max-width: 400px) {
+
+    body{
+        margin: auto;
+        flex-flow: column wrap;
+        width: fit-content;
+        background-color: white;
+        font-size: 18px;
+    }
+
+    .card{
+        box-shadow: none;
+        text-align: center;
+    }
+
     #result, #summary {
         flex: 100%;
         flex-flow:column;
         width: min-content;
-      
+    }
+
+    #result {
+        display: block;
+        position: relative;
+        width: 310px;
     }
 
     #result p:nth-child(4){
@@ -220,18 +258,32 @@ button:hover{
         margin-right: 0;
     }
 
-    .test-div{
-        max-width: 320px;
-    }
-    body{
-        margin: auto;
-        flex-flow: column wrap;
-        width: fit-content;
-        background-color: white;
+    #result p:nth-child(4){
+        padding: 2px;
     }
 
-    .card{
-        box-shadow: none;
-        text-align: center;
+    #summary-title{
+        display: block;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .test-div{
+        width: 300px;
+        background-color: black;
+    }
+
+    .score{
+        display: block;
+        position: relative;
+        margin-left: 150px;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    br {
+        display: block;
     }
 }
